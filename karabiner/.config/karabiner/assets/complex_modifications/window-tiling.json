@@ -1,0 +1,30 @@
+{
+  "title": "Window tiling (Ctrl+Alt+Arrow)",
+  "rules": [
+    {
+      "description": "Ctrl+Alt+Arrow → macOS window tiling (left/right half), global",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": { "mandatory": ["control", "option"] }
+          },
+          "to": [
+            { "key_code": "left_arrow", "modifiers": ["fn", "control"] }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": { "mandatory": ["control", "option"] }
+          },
+          "to": [
+            { "key_code": "right_arrow", "modifiers": ["fn", "control"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
